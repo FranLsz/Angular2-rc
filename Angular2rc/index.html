@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+    <!-- Angular -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="https://npmcdn.com/core-js/client/shim.min.js"></script>
+    <script src="https://npmcdn.com/zone.js@0.6.12?main=browser"></script>
+    <script src="https://npmcdn.com/reflect-metadata@0.1.3"></script>
+    <script src="https://npmcdn.com/systemjs@0.19.27/dist/system.src.js"></script>
+
+    <!-- Configuración y variables globales -->
+    <script type="text/javascript" src="/app/app.config.js"></script>
+    <script src="app/systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>   
+    <script type="text/javascript">
+        //System.config({
+        //    transpiler: 'typescript',
+        //    typescriptOptions: {
+        //        emitDecoratorMetadata: true
+        //    },
+        //    map: {
+        //        app: BASE_URL
+        //    },
+        //    packages: {
+        //        app: {
+        //            main: 'main',
+        //            defaultExtension: 'ts'
+        //        }
+        //    }
+        //});
+        //System.import('app').catch(console.error.bind(console));
+    </script>
+</head>
+<body>
+        <app></app>
+</body>
+</html>
